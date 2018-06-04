@@ -1,0 +1,25 @@
+<div>
+    <h2>Alterar Senha:</h2>
+    <mat-form-field>
+        <input matInput placeholder="Usuario* " [(ngModel)]="usuario">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="Senha Atual* " [(ngModel)]="senhaAtual">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="Nova Senha* " [(ngModel)]="novaSenha">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="Confirme Senha* " [(ngModel)]="confirmeSenha">
+    </mat-form-field>
+    <br>
+    <div>
+            <button mat-button color="primary" 
+                (click)="alterar()">Alterar</button>        
+            <button mat-button color="primary" 
+                (click)="cancelar">Cancelar</button>
+    </div>
+</div>
